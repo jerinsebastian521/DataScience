@@ -1,0 +1,26 @@
+import numpy as np
+a = np.arange(16).reshape(4,4)
+b=np.arange(16).reshape(4,4)
+print(a)
+print(b)
+
+print("addition\n",a+b)
+print("subtraction\n",a-b)
+print("mult\n",a*b)
+out=np.divide(a,b)
+print("divide\n",out)
+print("matrix mult\n",np.matmul(a,b))
+print("a transpose\n",a.transpose())
+print("b transpose\n",b.transpose())
+
+diag = np.diagonal(a)
+print("\nDiagonal elements of  mat a are:")
+print(diag)
+print("\nSum of Diagonal elements is:")
+print(sum(diag))
+
+diag = np.diagonal(b)
+print("\nDiagonal elements of  mat b are:")
+print(diag)
+print("\nSum of Diagonal elements is:")
+print(sum(diag))
